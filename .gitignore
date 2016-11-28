@@ -2,6 +2,7 @@
 ##############
 *.user
 *.stash
+Makefile*
 build*/
 
 Compiled source #
