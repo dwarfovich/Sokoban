@@ -1,6 +1,7 @@
 # Qt Creator #
 ##############
 *.user
+*.stash
 build*/
 
 Compiled source #
