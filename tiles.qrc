@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/tiles.png</file>
+        <file>resources/player.png</file>
+    </qresource>
+</RCC>
