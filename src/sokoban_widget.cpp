@@ -6,6 +6,7 @@
 #include <QHBoxLayout>
 #include <QMouseEvent>
 #include <QFileDialog>
+#include <QDir>
 #include <QMessageBox>
 #include <QPointF>
 
@@ -55,7 +56,7 @@ void SokobanWidget::drawBoard()
 
 void SokobanWidget::loadTestBoard ()
 {
-    QString filename = "/home/boo/level.sl";
+    QString filename = QDir::currentPath() + "level.sl";
     if (filename.isEmpty())
         return;
     else {
@@ -130,8 +131,8 @@ void SokobanWidget::loadBoard()
 {
     QString filename = QFileDialog::getOpenFileName(this,
                                                     "Load level",
-                                                    "/home/boo/level.sl",
-                                                    "Level (*.sl)");
+                                                    QDir::currentPath(),
+                                                    "Level file (*.sl)");
     if (filename.isEmpty())
         return;
     else {
@@ -156,8 +157,8 @@ void SokobanWidget::saveBoard()
 {
     QString filename = QFileDialog::getSaveFileName(this,
                                                     "Save level",
-                                                    "/home/boo/level.sl",
-                                                    "Level (*.sl)");
+                                                    QDir::currentPath(),
+                                                    "Level file(*.sl)");
     if (filename.isEmpty())
         return;
     else {
