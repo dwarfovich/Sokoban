@@ -10,9 +10,6 @@
 #include <QMouseEvent>
 #include <QMessageBox>
 
-#include <QDebug>
-#define DEB qDebug()
-
 BoardEditor::BoardEditor (QWidget* parent)
     : QWidget{parent}
     , sokoban_widget_{new SokobanWidget}

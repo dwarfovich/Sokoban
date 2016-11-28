@@ -10,9 +10,6 @@
 #include <QMessageBox>
 #include <QPointF>
 
-#include <QDebug>
-#define DEB qDebug()
-
 SokobanWidget::SokobanWidget(QWidget* parent)
     : QWidget{parent}
     , view_{new QGraphicsView}

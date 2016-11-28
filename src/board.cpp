@@ -2,9 +2,6 @@
 #include <QDataStream>
 #include <QRect>
 #include <iostream>
-using namespace std;
-#include <QDebug>
-#define DEB qDebug()
 
 QDataStream& operator<< (QDataStream& stream, const Tile& tile)
 {

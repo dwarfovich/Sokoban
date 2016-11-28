@@ -1,9 +1,6 @@
 #include "tile_item.hpp"
 #include <QPainter>
 
-#include <QDebug>
-#define DEB qDebug()
-
 QScopedPointer<QPixmap> TileItem::tile_sprites_{nullptr};
 
 TileItem::TileItem()
