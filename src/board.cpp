@@ -1,7 +1,5 @@
 #include "board.hpp"
 #include <QDataStream>
-#include <QRect>
-#include <iostream>
 
 QDataStream& operator<< (QDataStream& stream, const Tile& tile)
 {
